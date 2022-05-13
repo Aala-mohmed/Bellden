@@ -1,0 +1,93 @@
+{% extends 'events/index.html' %}
+{% load static %}
+
+{% block slidercontet %}
+
+{% endblock slidercontet %}
+
+{% block content %}
+
+
+
+
+  <main id="main">
+
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Events</h2>
+          <p>Organize Your Events in our Restaurant</p>
+        </div>
+
+        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'events/total/img/event-birthday.jpg'%}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Birthday Parties</h3>
+                  <div class="price">
+                    <p><span>$80</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    In order to enjoy Mr.'s birthday, we will provide you with some services that will help you make this day special
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i>we will send an invitation to all your guests. Clearly mention the date, time, and venue for everyone’s convenience.</li>
+                    <li><i class="bi bi-check-circled"></i> For a perfect entertaining party, we can also plan some fun games. Keep prizes and rewards to excite your guests.</li>
+                    <li><i class="bi bi-check-circled"></i>We can provide a photographer to immortalize the happy moments during the celebration. </li>
+                  </ul>
+                  <p>
+                    if you are satisfied with the party, don’t forget to tip the staff for their good work.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'events/total/img/event-private.jpg'%}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Private Parties</h3>
+                  <div class="price">
+                    <p><span>$190</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    We can provide some private parties in many places according to the customer's choice "YOU"
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> For a perfect entertaining party, we can also plan some fun games. Keep prizes and rewards to excite your guests./li>
+                    <li><i class="bi bi-check-circled"></i> We can deliver the order outside the restaurant with the same efficiency of presentation</li>
+                    <li><i class="bi bi-check-circled"></i> We can provide a photographer to immortalize the happy moments during the celebration. </li>
+                  </ul>
+                  <p>
+                    We wish you a happy party :)
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+
+
+
+    
+
+  </main><!-- End #main -->
+  {% endblock %}
+
+  

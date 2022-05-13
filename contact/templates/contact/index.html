@@ -1,0 +1,140 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Restaurantly Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href=" {% static 'contact/total/vendor/animate.css/animate.min.css' %} "rel="stylesheet">
+  <link href="{% static 'contact/total/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static  'contact/total/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static  'contact/total/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static  'contact/total/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static  'contact/total/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static   'contact/total/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'chefs/total/css/style.css'%}" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Bellden</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="total/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto"  href="{% url 'about' %}">About</a></li>
+          <li><a class="nav-link scrollto"  href="{% url 'menu' %}">Menu</a></li>
+          <li><a class="nav-link scrollto"  href="{% url 'specials' %}">Specials</a></li>
+          <li><a class="nav-link scrollto"  href="{% url 'events' %}">Events</a></li>
+          <li><a class="nav-link scrollto"  href="{% url 'chefs' %}">Chefs</a></li>
+          <li><a class="nav-link scrollto"  href="{% url 'topten' %}">Top Ten</a></li>
+          <li><a class="nav-link scrollto"  href="{% url 'gallery' %}">Gallery</a></li>
+          <li><a class="nav-link scrollto"  href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a  href="{% url 'table' %}" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to <span>Bellden Cafee</span></h1>
+          <h2>Dont dream of comfort contact us</h2>
+
+          <div class="btns">
+            <a  href="{% url 'menu' %}" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
+            <a href="{% url 'table' %}" class="btn-book animated fadeInUp scrollto">Book a Table</a>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://youtu.be/D-m0ymrkb0A" class="glightbox play-btn"></a>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    
+    {% block content%}
+
+    {% endblock %}
+  
+
+   
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12 col-md-12">
+            <div class="footer-info">
+              <h3 style="font-weight: bolder; ">Bellden</h3> <pre>  <p><strong>Address:</strong>  Beni Suef, East of the Nile           <strong>Phone: </strong>+201980478934537             <strong>Email:</strong> info@example.com
+              </p> </pre>   <div class="social-links mt-3">
+                <a href="https://twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://facebook.com/i/flow/login" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/meta/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://myaccount.google.com/" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="https://www.linkedin.com/company/facebook" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+      
+
+    <div class="container">
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+        Designed by <a href="#">our team for (Dr. Safinaz)</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  
+  <!-- Vendor JS Files -->
+  <script src="{% static 'contact/total/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'contact/total/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'contact/total/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static   'contact/total/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static  'contact/total/vendor/swiper/swiper-bundle.min.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'contact/total/js/main.js'%}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+{% extends 'chefs/index.html' %}
+{% load static %}
+
+
+
+{% block content %}
+
+  <main id="main">
+
+
+    <!-- ======= Specials Section ======= -->
+    <section id="specials" class="specials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Specials</h2>
+          <p>Check Our Specials</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Konafa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Tarte </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Fruit Salad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Ice Cream </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Basbousa</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Knafeh Nabulsi</h3>
+                    <p>Knafeh is a traditional Middle Eastern dessert made with spun pastry called kataifi,soaked in a sweet, sugar-based syrup called attar, and typically layered with cheese, or with other ingredients such as clotted cream, pistachio or nuts, depending on the region.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'specials/total/img/Konafa.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Tarte </h3>
+                    <p class="fst-italic">A tart is a baked dish consisting of a filling over a pastry base with an open top not covered with pastry. The pastry is usually shortcrust pastry; the filling may be sweet or savoury, though modern tarts are usually fruit-based, sometimes with custard. Tartlet refers to a miniature tart; an example would be egg tarts. The categories of "tart", "flan", "quiche", and "pie" overlap, with no sharp distinctions.
+                    </p>                 
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'specials/total/img/tart.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Fruit Salad</h3>
+                    <p class="fst-italic">
+                      Fruit salad is a dish consisting of various kinds of fruit, sometimes served in a liquid, either their own juices or a syrup. In different forms, fruit salad can be served as an appetizer, a side salad. When served as an appetizer, a fruit salad is sometimes known as a fruit cocktail (often connoting a canned product), or fruit cup (when served in a small container).
+                    </p></div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'specials/total/img/Fruit-Salad.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Blueberry</h3>
+                    <p class="fst-italic">
+                      Blueberry sauce is a sauce prepared using blueberries as a primary ingredient. It is typically prepared as a reduction, and can be used as a dessert sauce or savory sauce depending on the preparation. It can also be used in the preparation of the blueberry Martini.
+                    </p></div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'specials/total/img/blueberry.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Basbousa Lotus</h3>
+                    <p class="fst-italic">
+                      Basbousa will never leave our side, especially in Ramadan. Its presence is essential and it brings so many people a lot of joy. And thanks to recipe innovators like Cleobuttera and many more amazing food bloggers and chefs, we'll never get bored of enjoying a classic dessert like Basbousa because of the many creative ways you can go with it.
+                    </p></div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'specials/total/img/Basbousa.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Specials Section -->
+  </main><!-- End #main -->
+{% endblock %}
